@@ -1,16 +1,19 @@
 .grid-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2px;
-    width:600px;
     margin: 0 auto;
+    width: 400px;
 }
 
 .grid-square {
-    flex: 0 0 calc(25% - 2px);
-    padding-top: calc(25% -2px);
-    padding:10px;
-    border: solid 1px grey;
-    background-color: lightgrey;
-    
+    flex: 0 0 calc(25% - 2px); /* squares take 25% of the containers space(horizontally) minus 4px for gap & border each side */
+    padding-top: calc(25% - 2px); /* maintains aspect ratio of grid squares */
+    border: solid 1px red;
+    background-color: grey;
+}
+
+.hover-square {
+    background-color: blue;
 }
