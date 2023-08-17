@@ -1,19 +1,24 @@
 .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2px;
-    margin: 0 auto;
-    width: 400px;
+   display: grid;
+   height: 800px;
+   width: 800px;
+   background-color: lightgray;
+   margin: 0 auto;
+   gap: 2px;
+   box-sizing: content-box;
 }
 
 .grid-square {
-    flex: 0 0 calc(25% - 2px); /* squares take 25% of the containers space(horizontally) minus 4px for gap & border each side */
-    padding-top: calc(25% - 2px); /* maintains aspect ratio of grid squares */
-    border: solid 1px red;
-    background-color: grey;
+    border: 1px solid white
+}
+#user-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 10px auto;
 }
 
-.hover-square {
-    background-color: blue;
+.mouse-enter {
+    background-color: aqua;
 }
